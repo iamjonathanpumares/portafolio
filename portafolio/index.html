@@ -10,54 +10,75 @@
 		<header id="id_header" class="Header"> <!-- Encabezado --> <!-- Peso Semántico -->
 			<nav class="MainMenu"> <!-- Menú -->
 				<ul class="MainMenu-list"> <!-- Lista -->
-					<li class="MainMenu-item">Yo</li> <!-- Item de la lista -->
-					<li class="MainMenu-item">Perfil</li>
-					<li class="MainMenu-item">Trabajo</li>
-					<li class="MainMenu-item">Contacto</li>
+					<li class="MainMenu-item"><a href="#yo" class="MainMenu-link">Yo</a></li> <!-- Item de la lista -->
+					<li class="MainMenu-item"><a href="#perfil" class="MainMenu-link">Perfil</a></li>
+					<li class="MainMenu-item"><a href="#trabajo" class="MainMenu-link">Trabajo</a></li>
+					<li class="MainMenu-item"><a href="#contacto" class="MainMenu-link">Contacto</a></li>
 				</ul>
-				<a href="" class="MainMenu-link"></a>
 			</nav>
 			<figure class="Header-imageContainer"> <!-- Etiqueta semántica para contener una imagen -->
 				<img src="static/images/avatar.jpg" class="Header-image"> <!-- Imagen -->
-				<figcaption class="Header-title"> <!-- Título de la imagen -->
+				<figcaption class="Header-imageDescription"> <!-- Título de la imagen -->
 					<a href="https://twitter.com/mi_usuario" class="Header-link">@mi_usuario</a>	
 				</figcaption>
 			</figure>
-			<h1>Mi Nombre</h1>
+			<h1 class="Header-name">Mi Nombre</h1>
 		</header>
 		<section class="Profile"> <!-- Cuerpo (Mi perfil) -->
-			<h2 class="Profile-title">Mi perfil</h2>
-			<p class="Profile-description">Hola! si llegaste hasta aqui puedes ver mi portafolio y contactarme</p> <!-- Párrafo (Varias lineas) -->
+			<h2 class="Profile-title u-title">Mi perfil</h2>
+			<p class="Profile-description"><span class="Profile-span">Hola!</span> si llegaste hasta aqui puedes ver mi portafolio y contactarme</p> <!-- Párrafo (Varias lineas) -->
 			<a href="https://twitter.com/mi_usuario" class="Profile-link">@mi_usuario</a>
 			<a href="https://facebook.com/mi_usuario" class="Profile-link">Mi Nombre</a>
 			<a href="https://github.com/mi_usuario" class="Profile-link">Mi Nombre</a>
 		</section>
 		<section class="Work"> <!-- Cuerpo (Mi trabajo) -->
-			<h2 class="Work-title">Mi trabajo</h2>
+			<h2 class="Work-title u-title">Mi trabajo</h2>
 			<article class="Work-item">
-				<img src="static/images/proyecto.jpg">
-				<h5 class="Work-description">Website de mi proyecto</h5>
+				<figure class="Work-imageContainer">
+					<img src="static/images/proyecto.jpg" class="Work-image">
+					<figcaption class="Work-title">
+						<a href="#" class="Work-link">Website de mi proyecto</a>
+					</figcaption>
+				</figure>	
 			</article>
 			<article class="Work-item">
-				<img class="Work-image" src="static/images/proyecto.jpg">
-				<h5 class="Work-description">Website de mi proyecto</h5>
+				<figure class="Work-imageContainer">
+					<img src="static/images/proyecto.jpg" class="Work-image">
+					<figcaption class="Work-title">
+						<a href="#" class="Work-link">Website de mi proyecto</a>
+					</figcaption>
+				</figure>	
 			</article>
 			<article class="Work-item">
-				<img class="Work-image" src="static/images/proyecto.jpg">
-				<h5 class="Work-description">Website de mi proyecto</h5>
+				<figure class="Work-imageContainer">
+					<img src="static/images/proyecto.jpg" class="Work-image">
+					<figcaption class="Work-title">
+						<a href="#" class="Work-link">Website de mi proyecto</a>
+					</figcaption>
+				</figure>	
 			</article>
 			<article class="Work-item">
-				<img class="Work-image" src="static/images/proyecto.jpg">
-				<h5 class="Work-description">Website de mi proyecto</h5>
+				<figure class="Work-imageContainer">
+					<img src="static/images/proyecto.jpg" class="Work-image">
+					<figcaption class="Work-title">
+						<a href="#" class="Work-link">Website de mi proyecto</a>
+					</figcaption>
+				</figure>	
 			</article>
 			<article class="Work-item">
-				<img class="Work-image" src="static/images/proyecto.jpg">
-				<h5 class="Work-description">Website de mi proyecto</h5>
+				<figure class="Work-imageContainer">
+					<img src="static/images/proyecto.jpg" class="Work-image">
+					<figcaption class="Work-title">
+						<a href="#" class="Work-link">Website de mi proyecto</a>
+					</figcaption>
+				</figure>	
 			</article>
 		</section>
 		<footer class="Footer"> <!-- Pie de página -->
-			<h6 class="Footer-title">Contacto</h6>
-			<p class="Footer-description">Si tienes alguna sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
+			<div class="Footer-left">
+				<h3 class="Footer-title">Contacto</h3>
+				<p class="Footer-description">Si tienes alguna sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
+			</div>
 			<form class="Footer-form"> <!-- Formulario -->
 				<input type="text" placeholder="Nombre" class="Footer-input">
 				<input type="text" placeholder="Email" class="Footer-input">

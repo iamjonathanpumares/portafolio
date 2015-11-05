@@ -320,3 +320,113 @@ Hasta ahorita no hemos visto como tal cual es la sintaxis para escribir nuestras
 	propiedad: valor;
 }
 ~~~
+
+### Modelo de caja
+
+Cada elemento HTML se comporta como una caja rectangular.
+
+Los elementos HTML (cajas rectangulares) se componen de 6 partes:
+
+* Contenido (content): Se trata del contenido HTML del elemento (las palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.)
+
+* Relleno (padding): espacio libre opcional entre el contenido y el borde, se podría decir que es el margen interior del elemento.
+
+* Borde (border): línea que encierra completamente el contenido y su relleno.
+
+* Imagen de fondo (background image): imagen que se muestra por detrás del contenido y el espacio de relleno.
+
+* Color de fondo (background color): color que se muestra por detrás del contenido y el espacio de relleno.
+
+* Margen (margin): separación opcional existente entre la caja y el resto de cajas adyacentes.
+
+### Unidades de medida
+
+Las unidades de medida CSS se utilizan para definir la anchura, altura y los márgenes de los elementos HTML y para establecer el tamaño de letra del texto.
+
+Las unidades de medida se clasifican en dos grupos: Las relativas y absolutas. Las unidades relativas definen su valor en relación con otra medida, por lo que para obtener su valor real, se tiene que realizar una operación con el valor indicado. Las unidades absolutas definen su valor de manera explicita, es decir, el valor indicado.
+
+[Unidades de medida](https://platzi.com/blog/unidades-de-medida-en-css/)
+
+#### Unidades relativas
+
+* em, relativa con respecto al tamaño de letra del elemento actual.
+
+* rem, relativa con respecto al tamaño de letra del elemento raíz (html).
+
+* px, (píxeles) relativa con respecto al tamaño de resolución de la pantalla en la que se visualiza el documento HTML.
+
+* %, (porcentaje) relativa con respecto a los tamaños de su elemento padre.
+
+* vw (viewportheigth), ancho del viewport 
+
+* vh (viewportwidth), alto del viewport
+
+#### Unidades absolutas
+
+* in, pulgadas.
+
+* cm, centimetros.
+
+* mm, milimetros.
+
+* pt, puntos.
+
+* pc, picas.
+
+### Tipos de elementos
+
+El estándar HTML clasifica a todos sus elementos en dos grupos: elementos en línea y elementos de bloque.
+
+Los elementos en bloque siempre empiezan en una nueva línea y ocupan todo el ancho disponible del navegador. Los elementos en línea no necesariamente comienzan en una nueva línea y sólo ocupan el ancho de su contenido.
+
+Por sus características, los elementos de bloque no pueden insertarse dentro de elementos en línea y tan sólo pueden aparecer dentro de otros elementos de bloque. En cambio un elemento en línea puede aparecer tanto en un elemento en bloque como de otro elemento en línea.
+
+### Propiedad display
+
+Es una propiedad de CSS que define la manera en la que se visualiza nuestro elemento en la pantalla. Podemos aplicarlo a cualquier elemento de nuestro documento HTML.
+
+#### Valores de la propiedad display 
+
+* inline-block (Los elementos que tengan esta valor se visualizan uno al lado de otro, es decir, ocupan el ancho de su contenido)
+
+* block (Los elementos que tengan esta valor se visualizan uno encima de otro, es decir, ocupan todo el ancho de la página)
+
+* none (Este valor hace que los elementos no se muestren en la pantalla ni en el DOM)
+
+* table (Este valor hace que los elementos se comporten como una etiqueta `<table>`, sus elementos hijos tienen otras propiedades para que se comporten como celdas o columnas)
+
+Display flex
+
+### Propiedad position
+
+Es una propiedad de CSS que nos da la capacidad de ubicar o posicionar nuestros elementos HTML en cualquier lugar de la pantalla.
+
+#### Valores de la propiedad position
+
+* static, este es el valor por defecto de todos los elementos HTML, respetando el modelo de caja y acomodando nuestros elementos de acuerdo a su tipo (en línea o de bloque).
+
+* relative, al asignar este valor a la propiedad position, tenemos cuatro posibilidades (propiedades) de posicionar nuestros elementos, top, rigth, bottom, left, respetando y partiendo desde el lugar en el que fueron puestos en el documento HTML.
+
+* absolute, de igual manera tiene las cuatro posibilidades mencionadas (top, rigth, bottom y left), pero al asignar este valor, el elemento pierde su lugar en el se ubicaba en el documento HTML y se van acomodando los demás elementos en su lugar, y se ubica en el elemento padre más cercano con position: relative.
+
+* fixed, se comportan de manera similar al valor absolute, la única diferencia es que su posición del elemento en la pantalla se mantiene fija por lo que al hacer un scroll el elemento nos persigue en toda la página.
+
+Responsive Design
+
+Que nuestras aplicaciones web se puedan visualizar en todos los dispositivos disponible
+
+### Viewport
+
+Área visible del navegador
+
+
+
+
+
+
+
+
+
+
+
+

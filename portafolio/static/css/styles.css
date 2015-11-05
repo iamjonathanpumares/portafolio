@@ -1,69 +1,146 @@
-/* Selectores de elemento o etiquetas */
-header
+/* Selectores de elementos */
+
+body
 {
-	background: blue;
+	font-size: 16px;
 }
 
-p
+a
 {
-	font-size: 24px;
-	background: yellow;
-}
-
-/* Selectores de id */
-#id_header
-{
-	background: black;
+	text-decoration: none;
 }
 
 /* Selectores de clase */
-.Header
+
+.u-title
 {
-	background: red;
+	color: #00CCFF;
+	padding: .5em;
+	border-bottom: 2px dashed #00CCFF;
+	text-align: center;
 }
 
-.Header-title
+/* MainMenu */
+.MainMenu
 {
+	background: #1E1E1E;
+	color: #05DBFF;
+	height: 3.75em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 
+.MainMenu-list
+{
+	text-align: center;
+}
+
+.MainMenu-item
+{
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.MainMenu-link
+{
+	color: #00DBFF;
+}
+
+/* Header */
+.Header
+{
+	margin-top: 3.75em; 
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    text-align: center;
+}
+
+.Header-imageContainer
+{
+	margin: 0;
+}
+
+.Header-image
+{
+	height: 250px;
+	width: 250px;
+	margin: 1.5em 0; 
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+
+.Header-link
+{
+	color: #fff;
+	font-size: 2.18em;
+}
+
+.Header-name
+{
+	margin: 0;
+	padding-bottom: .5em;
+	color: #fff;
 }
 
 .Profile
 {
-
-}
-
-.Profile-title
-{
-
+	text-align: center;
 }
 
 .Profile-description
 {
-	
+	padding-bottom: 1em; 
+}
+
+.Profile-link
+{
+	background: #FFA500;
+	color: #fff;
+	padding: 1em;
+	border-radius: 3.75em;
+	margin: 1em 1em 0 0;
 }
 
 .Work
 {
+	text-align: center;
+}
 
+.Work-item
+{
+	display: inline-block;
+}
+
+.Work-link
+{
+	font-style: italic;
+	color: #515151;
 }
 
 .Footer
 {
-
+	background-image: url('../images/footer.jpg');
+	height: 300px;
 }
 
-.boton
+.Footer-input
 {
-
+	display: block;
+	margin-bottom: 1em;
+	border: 0;
+	border-radius: 3.75em;
+	padding: .7em .2em;
 }
 
-/* Selectores de atributo */
-[href]
+.Footer-left, .Footer-form
 {
-	font-size: 35px;
+	display: inline-block;
 }
 
-[type="text"]
+.Footer-left
 {
-	width: 100px;
+	vertical-align: top;
 }
